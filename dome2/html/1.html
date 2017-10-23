@@ -6,6 +6,8 @@
     <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
     </script>
     <link rel="stylesheet" href="../css/1.css">
+    <script src="../js/1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
 <div class="header">
@@ -30,6 +32,7 @@
         <li><a href="#">CONTACT ME</a></li>
     </ul>
 </div>
+<div class="clear"></div>
 <div class="main">
     <div class="bnm">
         <div class="rty">
@@ -49,33 +52,39 @@
                     Purto brute disputando cu est.</p>
             </div>
         </div>
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
-    <div class="rty1">
-        <div class="tutu"><img src="../image/profile.jpg" height="800" width="610" class="tu2"></div>
-        <div class="yui">
-            <h2>about me</h2>
-            <div class="tyu">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat.
-                Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis
-                molestiae pri.</div>
-            <div class="tyu1">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat.
-                Purto brute disputando cu est, eam dicam soluta ei.</div>
-            <div class="yui1">
-                <div class="col-md-6 col-sm-12">
-                    <h3>WEB DESIGN</h3>
-                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h3>ONLINE MARKETING</h3>
-                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h3>GRAPHICS DESIGN</h3>
-                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h3>SEO</h3>
-                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
+    <div class="maint">
+        <div class="maint1">
+            <div class="col-md-6 col-sm-12">
+                <div class="tutu"><img src="../image/profile.jpg" height="800" width="610" class="tu2"></div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="yui">
+                    <h2>about me</h2>
+                    <div class="tyu">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat.
+                        Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis
+                        molestiae pri.</div>
+                    <div class="tyu1">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat.
+                        Purto brute disputando cu est, eam dicam soluta ei.</div>
+                    <div class="yui1">
+                        <div class="col-md-6 col-sm-12">
+                            <h3>WEB DESIGN</h3>
+                            <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <h3>ONLINE MARKETING</h3>
+                            <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <h3>GRAPHICS DESIGN</h3>
+                            <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <h3>SEO</h3>
+                            <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,9 +160,9 @@
             <div class="ghrt">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute
                 disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</div>
         </div>
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
-    <div class="main2">
+    <div class="main2" style="clear: both">
         <div class="col-md-6 col-sm-12">
             <div class="masd">
                 <h2>WORK EXPERIENCE</h2>
@@ -184,13 +193,13 @@
             <div class="ghrt">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute
                 disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</div>
         </div>
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
     <div class="main3">
         <div class="wert">
             <h2>PORTFOLIO</h2>
-            <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne
-                periculis molestiae pri.</p>
+            <div class="sft">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne
+                periculis molestiae pri.</div>
         </div>
         <div class="wert1">
             <div class="col-md-4 col-sm-12"><img src="../image/port1.jpg" class="tu4"></div>
@@ -250,27 +259,4 @@
     </div>
 </div>
 </body>
-<script>
-$(function(){
-    var toTopHeight = $(".nav").offset().top;
-    var nav=$(".nav"); //得到导航对象
-    var win=$(window); //得到窗口对象
-    var sc=$(document);//得到document文档
-    win.scroll(function(){
-        if(sc.scrollTop()>=700){
-            nav.addClass("fixednav");
-            $(".navTmp").fadeIn();
-        }else{
-            nav.removeClass("fixednav");
-            $(".navTmp").fadeOut();
-        }
-        $("btn1").click(function () {
-            $("wer1").toggle();
-        });
-    });
-    $(".btn1").click(function () {
-        $(".wer1").toggle();
-    });
-});
-</script>
 </html>

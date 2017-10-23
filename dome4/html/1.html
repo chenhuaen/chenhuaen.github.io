@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /*.main{*/
+            /*width: 1024px;*/
+            /*margin-right: auto;*/
+            /*margin-left: auto;*/
+        /*}*/
+        /*.thi{*/
+            /*width: 1000px;*/
+            /*margin: 0 auto;*/
+
+        /*}*/
+        /*@media  (max-width: 768px) {*/
+            /*.main{*/
+                /*width:600px;*/
+            /*}*/
+            /*.thi{*/
+                /*width: 500px;*/
+            /*}*/
+        /*}*/
+        /*@media  (min-width: 1024px) {*/
+            /*.main{*/
+                /*width:auto;*/
+            /*}*/
+            /*.thi{*/
+                /*width: 1000px;*/
+            /*}*/
+        /*}*/
+
+        .header{
+            width: auto;
+            height: 100vh;
+            padding: 20px;
+            background-image:url("../image/header_bg.jpg") ;
+            background-size: cover;
+        }
+        .nav{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            line-height: 60px;
+            position: fixed;
+            top: 120px;
+            left: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .btn1{
+            display: none;
+            width: auto;
+            height: 40px;
+            background-color: #5cb85c;
+            float: left;
+            border: 0px;
+            margin: 10px 0px;
+        }
+        .btn-line{
+            display: block;
+            margin: 2px 6px;
+            width: 24px;
+            border: 2px solid white;
+        }
+        .wer1>li{
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            margin: 10px 20px;
+            float: left;
+        }
+        .wer1 a:hover{
+            color: #5cb85c;
+        }
+        .qwe{
+            font-size: 40px;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+            margin: 320px 0px 0px;
+        }
+        .main1{
+
+            width: auto;
+            height: 200px;
+            background-color: #E7E7E7;
+        }
+        .main1 .col-md-4{
+            width: 33.3333%;
+            height: auto;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .ert{
+            font-size: 25px;
+            font-weight: 300;
+            margin: 20px 0px;
+        }
+        .main2{
+            width: auto;
+            height: auto;
+            padding: 20px;
+        }
+        .ert1{
+            width: 680px;
+            padding: 10px;
+            font-size: 34px;
+            margin: 20px auto;
+            text-align: center;
+            border-bottom: 2px solid #747E8D;
+        }
+        .rty{
+            margin: 20px 60px;
+        }
+        .rty .col-md-6{
+            width: 50%;
+            height: auto;
+            box-sizing: border-box;
+            line-height: 30px;
+            float: left;
+            padding: 10px;
+            color: rgb(85, 85, 85);
+
+        }
+        .main3{
+            width: auto;
+            height: 400px;
+            background-image: url("../image/divider1.jpg");
+            background-size: cover;
+            margin: 20px 0px;
+            padding: 20px;
+            text-align: center;
+        }
+        .ert3{
+            font-size: 34px;
+            margin: 100px 0px 30px;
+            color: white;
+        }
+        .ert4{
+            font-size: 24px;
+            font-weight: 200;
+            font-family: "Lato";
+            line-height: 30px;
+            margin: 0px 100px;
+            color: white;
+        }
+        .rty1{
+            width: 700px;
+            margin: 20px auto;
+        }
+        .tu1{
+            margin: 20px 0px;
+            width: 700px;
+        }
+        .tu1>img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .rty1 p{
+            margin-top: 20px;
+            line-height: 30px;
+            color: rgb(85, 85, 85);
+        }
+        .rty2{
+            width: auto;
+            height: 400px;
+            background-image: url("../image/divider2.jpg");
+            background-size: cover;
+            margin: 20px 0px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .asd{
+            width: 600px;
+            font-size: 34px;
+            font-weight: 500;
+            margin: 160px auto 30px;
+            color: white;
+            padding: 10px;
+            border-bottom: 2px solid white;
+        }
+        .asd1{
+            font-size: 24px;
+            font-weight: 100;
+            margin: 0px 100px;
+        }
+        .ert5{
+            width: 600px;
+            font-size: 34px;
+            font-weight: 500;
+            margin: 30px auto;
+            padding: 10px;
+            border-bottom: 2px solid #747E8D;
+            text-align: center;
+        }
+        .tu2{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        .yui{
+            width: auto;
+            margin: 0px 60px;
+        }
+        .yui .col-md-3{
+            width: 25%;
+            height: auto;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+        }
+        .yui p{
+            margin: 30px 0px;
+            line-height: 30px;
+        }
+        .main5{
+            width: auto;
+            height: auto;
+            padding: 40px;
+            background-color: #E7E7E7;
+        }
+        .tu3{
+            float: left;
+        }
+        .tu3 img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .wty{
+            width: 300px;
+            height: auto;
+            float: right;
+            margin: 0px 40px;
+            padding: 20px;
+        }
+        .wty h3{
+            font-size: 24px;
+            font-weight: 300;
+            margin: 20px 0px;
+        }
+        .wty p{
+            font-size: 16px;
+            line-height: 30px;
+        }
+        .btn2{
+            display: block;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #2ECC71;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+        .rty3{
+            width: auto;
+            height: 400px;
+            background-image: url("../image/divider3.jpg");
+            background-size: cover;
+            margin: 0px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .thi .col-md-4{
+            width: 33.3333%;
+            height: auto;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .rty4{
+            width: auto;
+            height: 400px;
+            background-image: url("../image/divider4.jpg");
+            background-size: cover;
+            margin: 20px 0px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .rty5{
+            width: auto;
+            height: 400px;
+            background-image: url("../image/divider6.jpg");
+            background-size: cover;
+            margin: 20px 0px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .clear{
+            clear: both;
+        }
+
+        @media (max-width: 1200px) {
+            .wer1{
+                display: none;
+                position: relative;
+                top: 62px;
+                left: 0px;
+            }
+            .wer1>li{
+                display: block;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                margin: 0px;
+                padding: 0px 20px;
+                text-align: left;
+                background-color: black;
+                float: none;
+            }
+            .btn1{
+                display: block;
+                float: right;
+                margin: 10px 40px;
+            }
+            .main1{
+                height: auto;
+            }
+            .main1 .col-sm-12{
+                width: 100%;
+                height: auto;
+                float: none;
+            }
+            .ert1{
+                width: auto;
+            }
+            .main2 .col-sm-12{
+                width: 100%;
+                height: auto;
+                float: none;
+            }
+            .ert4{
+                margin: 0px;
+            }
+            .rty1{
+                width: auto;
+                margin: 20px;
+            }
+            .tu1{
+                width: auto;
+            }
+            .asd{
+                width: auto;
+                margin: 160px 0px 30px;
+            }
+            .asd1{
+                margin: 0px;
+            }
+            .ert5{
+                width: auto;
+                margin: 30px 20px;
+            }
+            .yui{
+                margin: 0px 20px;
+            }
+            .yui .col-sm-12{
+                width: 100%;
+                height: auto;
+                float: none;
+            }
+            .tu3{
+                width: auto;
+                float: none;
+            }
+            .wty{
+                width: auto;
+                margin: 20px;
+                float: none;
+            }
+            .thi .col-sm-12{
+                width: 100%;
+                float: none;
+            }
+        }
+        .con_list:after{
+            clear: both;
+            content: ' ';
+        }
+        .con_list .col-md-4 div{
+            width: auto;
+        }
+        .con_list .col-md-4 img{
+            width: 100%;
+        }
+        .hjk{
+            width: auto;
+            margin: 20px 40px;
+        }
+        .hjk .col-md-4{
+            width: 33.3333%;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .hjk h3{
+           font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        .rtyu>li{
+            display: block;
+            margin: 10px;
+
+        }
+        .rtyu a{
+            color: blue;
+        }
+        .yuu{
+            line-height: 30px;
+        }
+        .wert{
+            width: 100%;
+            height: 40px;
+            margin: 10px 0px;
+        }
+        .btn4{
+            display: block;
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #2ECC71;
+            border-radius: 3px;
+        }
+        .footer{
+            width: auto;
+            height: 80px;
+            padding: 10px;
+            background-color: black;
+            line-height: 80px;
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+        .footer a{
+            color: blue;
+        }
+        .asdf{
+            width: auto;
+            margin: 20px 40px;
+        }
+        .asdf .col-md-6{
+            width: 50%;
+            height: 400px;
+            padding: 5px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .asdf .col-md-4{
+            width: 33.333%;
+            height: 400px;
+            float: left;
+            background-color: #191F21;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .asdf .col-md-8{
+            width: 66.6667%;
+            height: 400px;
+            float: left;
+            background-color: #E7E7E7;
+            padding: 5px;
+            box-sizing: border-box;
+
+        }
+        .tu5{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        .ghh{
+            font-size: 24px;
+            margin: 20px 15px;
+        }
+        .ghh1{
+            margin: 20px 15px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 1200px){
+
+            .hjk .col-sm-12{
+                float: none;
+                width: 100%;
+            }
+            .asdf{
+                margin: 20px 0px;
+            }
+            .asdf .col-sm-12{
+
+                float: none;
+                width: 100%;
+            }
+            .asdf .col-md-4{
+                height: auto;
+                margin: 0px;
+            }
+            .asdf .col-md-8{
+                height: auto;
+                margin: 0px;
+            }
+            .footer{
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="qwe">
+        A Bootstrap 3 One Page Theme.<br>
+        Exclusive for BlackTie.co.
+    </div>
+</div>
+<div class="nav">
+    <button class="btn1">
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+    </button>
+    <ul class="wer1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<div class="main">
+    <div class="main1">
+        <div class="col-md-4 col-sm-12">
+            <div class="ert">Bootstrap 3</div>
+            <p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="ert">Retina Ready</div>
+            <p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="ert">Crafted with Love</div>
+            <p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love. </p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="main2">
+        <div class="ert1">
+            A LITTLE ABOUT OUR AGENCY
+        </div>
+        <div class="rty">
+            <div class="col-md-6 col-sm-12">
+                <div class="ert2">
+                    We believe ideas come from everyone, everywhere. In fact, at BlackTie, everyone within our agency walls
+                    is a designer in their own right. And there are a few principles we believe—and we believe everyone should
+                    believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the
+                    power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin
+                    Cities and we believe this place has much to offer. So we do what we can to support the community we love.
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="ert2">
+                    Over the past four years, we’ve provided more than $1 million in combined cash and pro bono support to Way
+                    to Grow, an early childhood education and nonprofit organization. Other community giving involvement
+                    throughout our agency history includes pro bono work for more than 13 organizations, direct giving, a
+                    scholarship program through the Minneapolis College of Art & Design, board memberships, and ongoing
+                    participation in the Keystone Club, which gives five percent of our company’s earnings back to the community each year.
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="main3">
+        <div class="ert3">
+            DESIGN EXPAND BOUNDARIES
+        </div>
+        <div class="ert4">
+            To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.
+        </div>
+    </div>
+    <div class="rty1">
+        <div class="ert1">ONE BRAND, ONE VOICE.</div>
+        <P>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two
+            halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility.
+            Brands that aren’t credible aren’t viable. </P>
+        <p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and
+            consumers to create an experience that connects from the inside out.</p>
+        <p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes
+            a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience
+            embraces. That’s when the brand can truly flex its muscles.</p>
+        <div class="ert1">MOBILE FIRST THINKING, ALWAYS.</div>
+        <div class="tu1">
+            <img src="../image/iphone.png">
+        </div>
+    </div>
+    <div class="rty2">
+        <div class="asd">DESIGN IS AN INTERACTION</div>
+        <div class="asd1">To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take
+            part in the conversation.</div>
+    </div>
+    <div class="main4">
+        <div class="ert5">
+            MEET OUR AWESOME TEAM
+        </div>
+        <div class="yui">
+            <div class="col-md-3 col-sm-12">
+                <img src="../image/team01.jpg" class="tu2">
+                <h3>Mike Arney</h3>
+                <p>Mike combines an expert technical knowledge with a real eye for design. Working with clients from a wide
+                    range of industries, he fully understands client objectives when working on a project, large or small.</p>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img src="../image/team02.jpg" class="tu2">
+                <h3>Tim Davies</h3>
+                <p>Tim is an experienced marcoms practitioner and manages projects from inception to delivery. He understands
+                    the synergy between great design and commercial effectiveness which shines through on every project.</p>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img src="../image/team03.jpg" class="tu2">
+                <h3>Michele Lampa</h3>
+                <p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and
+                    expertise is an important pillar in our agency.</p>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img src="../image/team04.jpg" class="tu2">
+                <h3>Jaye Smith</h3>
+               <p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for
+                   simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="main5">
+        <div class="tu3">
+            <img src="../image/macbook.png"/>
+        </div>
+        <div class="wty">
+            <h3>We Are Hiring!</h3>
+            <p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day
+                to craft pixel perfect sites.</p>
+            <a href="#" class="btn2" type="button">contact us</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="rty3">
+        <div class="asd">DESIGN SOLVE PROBLEMS</div>
+        <div class="asd1">To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take
+            part in the conversation.</div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="main6">
+        <div class="ert5">
+            WE CREATE COOL STUFF
+        </div>
+        <div class="thi con_list">
+            <div class="col-md-4 col-sm-12">
+                <div>
+                    <img src="../image/folio01.jpg" class="tu4">
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div>
+                    <img src="../image/folio02.jpg" class="tu4">
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div>
+                    <img src="../image/folio03.jpg" class="tu4">
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div>
+                    <img src="../image/folio04.jpg" class="tu4">
+                </div>
+              </div>
+            <div class="col-md-4 col-sm-12">
+                <div> <img src="../image/folio05.jpg" class="tu4"></div>
+               </div>
+            <div class="col-md-4 col-sm-12">
+                <div>
+                    <img src="../image/folio06.jpg" class="tu4">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="rty4">
+        <div class="asd">DESIGN IS AN INTERACTION</div>
+        <div class="asd1">To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take
+            part in the conversation.</div>
+    </div>
+    <div class="main7">
+        <div class="ert5">
+            WE CREATE COOL STUFF
+        </div>
+        <div class="asdf">
+            <div class="col-md-6 col-sm-12">
+                <div class="tyui">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="../image/team04.jpg" class="tu5">
+                        <div>
+                            <h3>Jaye Smith</h3>
+                            Published Aug 30.
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="ghh">We Define Success</div>
+                        <div class="ghh1">Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic
+                            direction and creative execution that solves a business problem and brings the brand to life.</div>
+                        <div class="ghh1">In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the
+                            audience fall in love all over again with our client’s brand.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="tyui">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="../image/team03.jpg" class="tu5">
+                        <div>
+                           <h3>Michele Lampa</h3>
+                            Published Aug 28.
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="ghh">A Beautiful Story</div>
+                        <div class="ghh1">Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic
+                            direction and creative execution that solves a business problem and brings the brand to life.</div>
+                        <div class="ghh1">In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when
+                            we watch the audience fall in love all over again with our client’s brand.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="rty5">
+        <div class="asd">DESIGN IS AN INTERACTION</div>
+        <div class="asd1">To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take
+            part in the conversation.</div>
+    </div>
+    <div class="main8">
+        <div class="ert5">
+            WE CREATE COOL STUFF
+        </div>
+        <div class="hjk">
+            <div class="col-md-4 col-sm-12">
+                <h3>Contact Information</h3>
+                <ul class="rtyu">
+                    <li>Some Address 987, NY</li>
+                    <li>+34 9884 4893</li>
+                    <li> +34 59855 9853</li>
+                    <li><a href="#">agency@blacktie.co</a></li>
+                    <li><a href="#">@blacktie_co</a> </li>
+                    <li><a href="#">BlackTie Agency</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h3>Newsletter</h3>
+                <div class="yuu">Register to our newsletter and be updated with the latests information regarding our services, offers and much more.
+                </div>
+                <input class="wert" placeholder="email"><br>
+                <input class="wert" placeholder="your name">
+                <a href="#" class="btn4">sign in</a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h3>Contact Information</h3>
+                <div class="yuu">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    BlackTie.co - Copyright 2014. More Templates <a href="#">模板之家</a> - Collect from<a href="#">网页模板</a>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+       $(".btn1").click(function () {
+           $(".wer1").toggle();
+       });
+    });
+</script>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="pc.css">
+    <style>
+        body {
+            background: url("../image/guang.jpg") no-repeat center top;
+            background-size: cover;
+        }
+
+        img {
+            display: block;
+        }
+
+        .container {
+            width: 750px;
+            text-align: center;
+        }
+
+        .img-lg {
+            display: inline-block;
+            width: 460px;
+            text-align: center;
+
+        }
+
+        .asd1 {
+            list-style: none;
+            width: 460px;
+            display: inline-block;
+        }
+
+        .img-lg .btn {
+            display: inline-block;
+            width: 50%;
+
+        }
+
+        .form .input {
+            display: inline-block;
+            position: absolute;
+            background-color: #000000; /* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #FFF;
+            border-radius: 2px;
+            border: 0px;
+
+        }
+
+        .form .inupt_1 {
+            top: 96px;
+        }
+
+        .form .inupt_2 {
+            top: 150px;
+
+        }
+
+        .form .inupt_3 {
+            top: 208px;
+
+        }
+
+        .form .inupt_4 {
+            top: 262px;
+
+        }
+
+        .form .inupt_5 {
+            top: 316px;
+
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                width: 320px;
+            }
+
+            .img-lg {
+                width: 300px;
+            }
+
+            .asd1 {
+                width: 300px;
+            }
+
+            .form .input {
+                top: 62px;
+                width: 208px;
+                left: 92px;
+                height: 28px;
+                padding: 4px;
+                line-height: 20px;
+            }
+
+            .form .inupt_1 {
+                top: 62px;
+            }
+
+            .form .inupt_2 {
+                top: 98px;
+
+            }
+
+            .form .inupt_3 {
+                top: 134px;
+
+            }
+
+            .form .inupt_4 {
+                top: 170px;
+
+            }
+
+            .form .inupt_5 {
+                top: 206px;
+
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+
+            .img-lg {
+                width: 460px;
+            }
+
+            .asd1 {
+                width: 460px;
+            }
+
+            .form .input {
+
+                top: 96px;
+                width: 320px;
+                left: 140px;
+                height: 40px;
+                padding: 10px;
+                line-height: 20px;
+                color: #FFF;
+                border-radius: 3px;
+            }
+
+            .form .inupt_1 {
+                top: 96px;
+            }
+
+            .form .inupt_2 {
+                top: 150px;
+
+            }
+
+            .form .inupt_3 {
+                top: 208px;
+
+            }
+
+            .form .inupt_4 {
+                top: 262px;
+
+            }
+
+            .form .inupt_5 {
+                top: 316px;
+
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+
+            .img-lg {
+                width: 600px;
+            }
+
+            .asd1 {
+                width: 600px;
+            }
+
+            .form .input {
+                top: 126px;
+                width: 420px;
+                left: 180px;
+                height: 52px;
+                padding: 10px;
+                line-height: 32px;
+                border-radius: 6px;
+            }
+
+            .form .inupt_1 {
+                top: 126px;
+            }
+
+            .form .inupt_2 {
+                top: 197px;
+
+            }
+
+            .form .inupt_3 {
+                top: 268px;
+
+            }
+
+            .form .inupt_4 {
+                top: 339px;
+            }
+
+            .form .inupt_5 {
+                top: 410px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+
+            .img-lg {
+                width: 700px;
+            }
+
+            .asd1 {
+                width: 700px;
+            }
+
+            .form .input {
+                top: 146px;
+                width: 490px;
+                left: 210px;
+                height: 62px;
+                padding: 15px;
+                line-height: 30px;
+                border-radius: 10px;
+            }
+
+            .form .inupt_1 {
+                top: 146px;
+            }
+
+            .form .inupt_2 {
+                top: 230px;
+
+            }
+
+            .form .inupt_3 {
+                top: 314px;
+
+            }
+
+            .form .inupt_4 {
+                top: 398px;
+            }
+
+            .form .inupt_5 {
+                top: 482px;
+            }
+        }
+
+        .img-lg img {
+            width: 100%;
+            display: block;
+
+        }
+
+        .asd1 {
+            list-style: none;
+        }
+
+        .asd1 li {
+            text-align: left;
+            line-height: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="img-lg">
+        <img src="../image/bubu.png"/>
+        <img src="../image/zgzh_01.png"/>
+        <img src="../image/zgzh_02.png"/>
+        <img src="../image/zgzh_03.png"/>
+    </div>
+    <div class="img-lg form" style="position: relative">
+        <img src="../image/linghongbo.png"/>
+        <input class="input inupt_1" placeholder="请输入手机号码"/>
+        <input class="input inupt_2" placeholder="输入验证码"/>
+        <input class="input inupt_3" placeholder="请输入登入密码"/>
+        <input class="input inupt_4" placeholder="请再次输入密码"/>
+        <input class="input inupt_5" placeholder="T6994"/>
+    </div>
+    <div class="img-lg">
+        <img src="../image/anniu.png" class="btn"/>
+    </div>
+
+</div>
+<div class="container" style="color: #fff">
+    <div class="asd1" style="position: relative">
+        <img src="../image/logo.png" style="display: block;float: left">
+        <span style="display: block;float: left;height: 45px;line-height: 45px;font-size: 20px;padding-left: 10px">活动规则</span>
+    </div>
+    <ul class="asd1">
+        <li>
+            1、活动时间：2017年10月25日起
+        </li>
+        <li>
+            2、新用户注册即可领取666元新手礼包，并领取30000元体验金，享12%年化的体验标；
+        </li>
+        <li>
+            3、参与“步步为盈”的用户，累计可获得5%的加息券，此活动针对活动平台所有用户；
+        </li>
+        <li>
+            4、每完成一个任务，用户可直接在APP“我的任务”或网页首页“我的任务”中直接领取加息券；
+        </li>
+        <li>
+            5、请先投资体验标，再投资其他标的，先投资其他标的则不能再享受体验标；
+        </li>
+        <li>
+            6、用户每次只能使用一个红包，投标后红包金额返现至账户中；
+        </li>
+        <li>
+            7、加息券每次只能使用一张，可在投标时直接使用；
+        </li>
+        <li>
+            8、“体验金”、“红包”和“加息券”可在【我的账户】-【我的奖励】中查看使用；
+        </li>
+        <li>
+            9、加息券和红包不可同时使用；
+        </li>
+        <li>
+            10、本活动最终解释权归e聚富所有，如有疑问请致电客服400-839-8848（服务时间：9:00-21:00）。
+        </li>
+
+    </ul>
+</div>
+<div class="container" style="color: #818F9B;padding: 40px">
+<div>理财有风险，投资需谨慎</div>
+    <div>*本活动最终解释权归e聚富所有*</div>
+</div>
+</body>
+</html>

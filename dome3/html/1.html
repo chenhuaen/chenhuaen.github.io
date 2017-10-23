@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            width: 100%;
+            height: 800px;
+            padding: 10px;
+            background-image: url("../image/intro-bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .tu1 {
+            width: 60px;
+            height: 60px;
+            z-index: 10;
+            position: absolute;
+            top: 120px;
+            left: 20px;
+        }
+
+        .qwe {
+            width: 800px;
+            color: white;
+            margin: 320px 100px 40px;
+        }
+
+        .qwe h3 {
+            font-size: 26px;
+            color: #7A6F67;
+        }
+
+        .qwe h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin: 20px 0px;
+        }
+
+        /*menu*/
+        .wer > li {
+            display: block;
+            float: left;
+            margin: 20px 10px;
+            color: #7A6F67;
+        }
+
+        .wer a {
+            font-size: 22px;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .btn_line {
+            display: block;
+            width: 22px;
+            border: 1px solid white;
+            margin: 4px;
+        }
+
+        .btn {
+            float: right;
+        }
+
+        .menu {
+            width: 120px;
+            height: 40px;
+            padding: 10px;
+            background-color: black;
+            line-height: 20px;
+            position: fixed;
+            top: 120px;
+            right: 30px;
+        }
+
+        /*nav*/
+        .nav {
+            display: none;
+            background-color: black;
+            padding: 20px;
+            width: 250px;
+            height: 620px;
+            color: white;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+
+        .nav a {
+            color: white;
+        }
+
+        .wer2 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .wer1 > li {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .close::before {
+            content: "\2716";
+        }
+
+        .close {
+            display: block;
+            background-color: aqua;
+            color: red;
+            line-height: 16px;
+            height: 30px;
+            width: 30px;
+            font-size: 18px;
+            padding: 8px;
+            float: right;
+        }
+
+        .tub::before {
+            content: "\2193";
+        }
+
+        .tub {
+            font-size: 24px;
+            color: red;
+            float: right;
+            margin-right: 30px;
+            position: relative;
+            animation: mymove 1s linear infinite alternate;
+        }
+
+        @keyframes mymove {
+            from {
+                top: 0px;
+            }
+            to {
+                top: 20px;
+            }
+        }
+
+        /*!*main*!main1*/
+        #asd {
+            background-image: url("../image/profile-bg.jpg");
+            background-size: cover;
+        }
+
+        .ert {
+            background-color: #B5B5B5;
+            opacity: 0.7;
+            padding: 10px;
+        }
+
+        .wer2 {
+            width: auto;
+            margin: 60px 20px;
+        }
+
+        .wer3 {
+            width: auto;
+            margin: 60px 40px;
+        }
+
+        .ert1 {
+            font-size: 18px;
+        }
+
+        .ert1 h4 {
+            color: chocolate;
+        }
+
+        .ert1 p {
+            font-weight: 700;
+            margin: 40px 0px;
+            font-family: "montserrat-regular", sans-serif;
+            line-height: 30px;
+            color: #636363;
+        }
+
+        .ert2 {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 40px 0px;
+        }
+
+        .btn1 {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin: 20px 0px;
+            background-color: #636363;
+            color: black;
+        }
+
+        .btn2 {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin: 20px 0px;
+            background-color: black;
+            color: white;
+        }
+
+        .ert3 {
+            line-height: 30px;
+            margin: 30px 0px;
+        }
+
+        /*main2*/
+        .main2 {
+            height: 1000px;
+            background-image: url("../image/skills-bg.jpg");
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .rty {
+            margin: 120px 30px;
+        }
+
+        .rty h4 {
+            font-size: 24px;
+            color: chocolate;
+        }
+
+        .rty h1 {
+            font-size: 40px;
+            color: white;
+        }
+
+        .rty p {
+            font-size: 18px;
+            line-height: 30px;
+            color: #B5B5B5;
+            margin: 40px 0px;
+        }
+
+        .rty1 {
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            line-height: 30px;
+            margin: 40px 0px;
+        }
+
+        .line {
+            display: block;
+            background-color: chocolate;
+            width: 100%;
+            height: 5px;
+        }
+
+        .line1 {
+            background-color: white;
+            height: 5px;
+            width: 90%;
+        }
+
+        .line2 {
+            background-color: white;
+            height: 5px;
+            width: 85%;
+        }
+
+        .line3 {
+            background-color: white;
+            height: 5px;
+            width: 70%;
+        }
+
+        .line4 {
+            background-color: white;
+            height: 5px;
+            width: 95%;
+        }
+
+        .line5 {
+            background-color: white;
+            height: 5px;
+            width: 75%;
+        }
+
+        .line6 {
+            background-color: white;
+            height: 5px;
+            width: 90%;
+        }
+
+        .main3 {
+            width: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .tyu h4 {
+            font-size: 24px;
+            color: chocolate;
+            margin-top: 40px;
+
+        }
+
+        .tyu h2 {
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        .tyu p {
+            width: 680px;
+            font-size: 20px;
+            line-height: 30px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .line-down {
+            display: block;
+            width: 300px;
+            border: 1px solid #636363;
+            margin: 20px auto;
+        }
+
+        .tyu2 {
+            margin: 0px 20px;
+        }
+
+        .yui {
+            font-size: 20px;
+            color: chocolate;
+            width: 180px;
+            height: 40px;
+            line-height: 40px;
+            /*border: 1px solid blue;*/
+            margin: 40px 20px;
+        }
+
+        .line8 {
+            display: block;
+            width: 30px;
+            border: 2px solid #B5B5B5;
+            margin: 18px 0px;
+            float: left;
+
+        }
+
+        .ruan {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: chocolate;
+            float: left;
+        }
+
+        .yui1 {
+            text-align: left;
+        }
+
+        .yui1 h5 {
+            font-size: 18px;
+            color: #B5B5B5;
+        }
+
+        .yui1 h3 {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 10px 0px;
+        }
+
+        .yui1 p {
+            line-height: 30px;
+            margin: 40px 80px;
+        }
+
+        .yui2 {
+            float: left;
+            margin-left: 24px;
+        }
+
+        .main4 {
+            background-color: #B5B5B5;
+            text-align: center;
+            padding: 10px 10px 140px;
+        }
+
+        .asd > img {
+            max-width: 100%;
+        }
+
+        .asdf {
+            margin: 40px 80px;
+        }
+
+        .main5 {
+            height: 1200px;
+            background-image: url("../image/profile-bg.jpg");
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hui {
+            width: 760px;
+            margin: 40px auto;
+        }
+
+        .hui h4 {
+            font-size: 24px;
+            color: chocolate;
+        }
+
+        .hui h1 {
+            font-size: 54px;
+        }
+
+        .hui p {
+            font-size: 24px;
+            color: #7A6F67;
+            margin: 30px 0px;
+        }
+
+        .hui1 {
+            width: 760px;
+            margin: 0px auto;
+        }
+
+        .fgi {
+            width: 100%;
+            height: 40px;
+            margin: 20px 0px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #B5B5B5;
+            color: #7A6F67;
+            font-size: 20px;
+
+        }
+
+        .fgi:focus {
+            border-bottom: 1px solid chocolate;
+        }
+
+        .fgi1 {
+            width: 100%;
+            height: 140px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #B5B5B5;
+            color: #7A6F67;
+            font-size: 20px;
+        }
+
+        .fgi1:focus {
+            border-bottom: 1px solid chocolate;
+        }
+
+        .btn3 {
+            display: block;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: chocolate;
+            margin: 30px 0px;
+            color: white;
+        }
+
+        .hui1 h5 {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .hui1 p {
+            color: #B5B5B5;
+            line-height: 30px;
+        }
+
+        .footer {
+            background-color: black;
+            padding: 10px 10px 60px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: chocolate;
+        }
+
+        .ghi {
+            width: 560px;
+            margin: 10px auto;
+            text-align: center;
+            padding: 10px auto;
+        }
+
+        .ghi > li {
+            display: block;
+            float: left;
+            margin: 20px;
+        }
+
+        .ghi a {
+            color: #B5B5B5;
+            font-size: 20px;
+        }
+
+        .ghi1 {
+            color: #7A6F67;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 992px) {
+            header {
+                height: auto;
+            }
+
+            .qwe {
+                width: auto;
+                margin: 200px 40px 100px;
+            }
+
+            .asdf {
+                margin: 40px 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .qwe h3 {
+                font-size: 20px;
+            }
+
+            .qwe h1 {
+                font-size: 30px;
+                font-weight: 500;
+            }
+
+            .tyu p {
+                width: auto;
+            }
+
+            .asdf {
+                margin: 40px 20px;
+            }
+
+            .hui {
+                width: auto;
+                margin: 40px 20px;
+            }
+
+            .hui1 {
+                width: auto;
+                margin: 0px auto;
+            }
+
+            .main5 {
+                height: auto;
+            }
+
+            .hui1 .col-sm-4 {
+                margin: 20px 0px;
+            }
+
+            .ghi {
+                width: auto;
+                margin: 10px 20px;
+            }
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="../image/logo.png" class="tu1">
+    <div class="qwe">
+        <h3>Hello, World.</h3>
+        <h1>I am Jonathan Smith.</h1>
+        <h1>Graphic & UI/UX Designer</h1>
+        <h1>Based in Manila Philippines. </h1>
+        <ul class="wer">
+            <li>More<a href="#">About Me</a></li>
+            <li>View<a href="#">My Works</a></li>
+            <li>Contact<a href="#">By Email</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <a href="#">MENU
+            <span class="btn">
+                <span class="btn_line"></span>
+                <span class="btn_line"></span>
+                <span class="btn_line"></span>
+            </span>
+        </a>
+    </div>
+    <div class="nav">
+        <div class="wer2">
+            howday<span class="close" type="button"></span>
+        </div>
+        <ul class="wer1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="tub"></div>
+</div>
+<div class="main">
+    <div class="main1">
+        <div class="col-md-6 col-sm-6" id="asd">
+            <div class="ert">
+                <div class="wer2">
+                    <div class="ert1">
+                        <h4>About</h4>
+                        <h1>More About Me.</h1>
+                        <P>Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam
+                            nostrud mollit laboris sunt magna velit culpa consectetur nostrud consectetur labore sed
+                            do.</P>
+                    </div>
+                    <div class="ert2">
+                        Lorem ipsum Nisi officia Duis irure voluptate dolor commodo pariatur occaecat aliquip
+                        adipisicing voluptate Ut in qui ea sint occaecat in commodo in in in incididunt
+                        ut sunt in Ut Duis in ut ex qui anim cupidatat cupidatat ex in non dolore labore ea amet cillum
+                        ea qui dolor nisi sed velit mollit exercitation ex fugiat labore in deserunt
+                        culpa laborum culpa anim dolore laboris amet irure mollit proident velit fugiat aute ea elit
+                        magna consequat qui officia quis elit Duis dolor esse cupidatat tempor
+                        proident voluptate aliqua ex cupidatat do eiusmod veniam irure laborum ut magna nostrud dolore
+                        ullamco commodo elit sit magna aliqua laborum veniam officia dolor.
+                    </div>
+                    <div class="ert2">
+                        Lorem ipsum Minim nisi dolore proident Ut dolor quis deserunt voluptate Ut voluptate enim ut
+                        adipisicing fugiat cupidatat nisi adipisicing labore non adipisicing in sit proident.
+                        Ut in qui ea sint occaecat in commodo in in in incididunt ut
+                    </div>
+                    <a href="#" class="btn1" type="button">contact me</a>
+                    <a href="#" class="btn2" type="button">download cv</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="wer3">
+                <div class="ert1">
+                    <h4>Services</h4>
+                    <h1>What I Do.</h1>
+                    <P>Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam nostrud
+                        mollit laboris sunt magna velit culpa consectetur nostrud consectetur labore sed do.</P>
+                </div>
+                <div class="ert3">
+                    <h4>Branding</h4>
+                    <p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat
+                        non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. </p>
+                </div>
+                <div class="ert3">
+                    <h4>Photography</h4>
+                    <p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat
+                        non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. </p>
+                </div>
+                <div class="ert3">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat
+                        non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. </p>
+                </div>
+                <div class="ert3">
+                    <h4>UI/UX Design</h4>
+                    <p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat
+                        non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. </p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="main2">
+        <div class="col-md-6 col-sm-9">
+            <div class="rty">
+                <div>
+                    <h4>Skillset</h4>
+                    <h1>I've Got Some Skills.</h1>
+                    <p>Lorem ipsum Elit ut consequat veniam eu nulla nulla reprehenderit reprehenderit sit velit in
+                        cupidatat ex aliquip ut cupidatat Excepteur tempor id irure sed dolore sint sunt voluptate
+                        ullamco nulla qui Duis qui culpa voluptate enim ea aute qui veniam in irure et nisi nostrud
+                        deserunt est officia minim.</p>
+                </div>
+                <div class="rty1">
+                    <span>HTML5</span><span></span>
+                    <div class="line">
+                        <div class="line1"></div>
+                    </div>
+                </div>
+                <div class="rty1">
+                    <span>CSS3</span><span></span>
+                    <div class="line">
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <div class="rty1">
+                    <span>JQUERY</span><span></span>
+                    <div class="line">
+                        <div class="line3"></div>
+                    </div>
+                </div>
+                <div class="rty1">
+                    <span>PHP</span><span></span>
+                    <div class="line">
+                        <div class="line4"></div>
+                    </div>
+                </div>
+                <div class="rty1">
+                    <span>Wordpress</span><span></span>
+                    <div class="line">
+                        <div class="line5"></div>
+                    </div>
+                </div>
+                <div class="rty1">
+                    <span>Angular JS</span><span></span>
+                    <div class="line">
+                        <div class="line6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="tyu">
+            <h4>Career and Education</h4>
+            <h2>More of My Credentials.</h2>
+            <p>Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint
+                fugiat cillum ullamco proident
+                aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+            <div class="line-down"></div>
+        </div>
+        <div class="tyu1">
+            <div class="col-md-6 col-sm-6">
+                <div class="tyu2">
+                    <div class="yui"><span class="line8"></span>Experience</div>
+                    <div class="yui1">
+                        <div class="ruan"></div>
+                        <div class="dtu">
+                            <div class="yui2">
+                                <h5>July 2015 - Present</h5>
+                                <h3>Awesome Studio</h3>
+                                <h4>UI Designer</h4>
+                            </div>
+                            <div class="clear"></div>
+                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
+                                cupidatat
+                                laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla
+                                esse
+                                cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="yui1">
+                        <div class="ruan"></div>
+                        <div class="yui2">
+                            <h5>July 2015 - Present</h5>
+                            <h3>Awesome Studio</h3>
+                            <h4>UI Designer</h4>
+                        </div>
+                        <div class="clear"></div>
+                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat
+                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse
+                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                    </div>
+                    <div class="yui1">
+                        <div class="ruan"></div>
+                        <div class="yui2">
+                            <h5>July 2015 - Present</h5>
+                            <h3>Awesome Studio</h3>
+                            <h4>UI Designer</h4>
+                        </div>
+                        <div class="clear"></div>
+                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat
+                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse
+                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                    </div>
+                    <div class="yui1">
+                        <div class="ruan"></div>
+                        <div class="yui2">
+                            <h5>July 2015 - Present</h5>
+                            <h3>Awesome Studio</h3>
+                            <h4>UI Designer</h4>
+                        </div>
+                        <div class="clear"></div>
+                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat
+                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse
+                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="tyu2">
+                <div class="yui"><span class="line8"></span>Education</div>
+                <div class="yui1">
+                    <div class="ruan"></div>
+                    <div class="yui2">
+                        <h5>July 2015 - Present</h5>
+                        <h3>Awesome Studio</h3>
+                        <h4>UI Designer</h4>
+                    </div>
+                    <div class="clear"></div>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat
+                        laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse
+                        cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                </div>
+                <div class="yui1">
+                    <div class="ruan"></div>
+                    <div class="yui2">
+                        <h5>July 2015 - Present</h5>
+                        <h3>Awesome Studio</h3>
+                        <h4>UI Designer</h4>
+                    </div>
+                    <div class="clear"></div>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat
+                        laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse
+                        cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                </div>
+                <div class="yui1">
+                    <div class="ruan"></div>
+                    <div class="yui2">
+                        <h5>July 2015 - Present</h5>
+                        <h3>Awesome Studio</h3>
+                        <h4>UI Designer</h4>
+                    </div>
+                    <div class="clear"></div>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat
+                        laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse
+                        cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                </div>
+                <div class="yui1">
+                    <div class="ruan"></div>
+                    <div class="yui2"></div>
+                    <div class="yui2">
+                        <h5>July 2015 - Present</h5>
+                        <h3>Awesome Studio</h3>
+                        <h4>UI Designer</h4>
+                    </div>
+                    <div class="clear"></div>
+                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat
+                        laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse
+                        cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="main4">
+        <div class="tyu">
+            <h4>Portfolio</h4>
+            <h2>More of My Credentials.</h2>
+            <p>Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint
+                fugiat cillum ullamco proident
+                aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+        </div>
+        <div class="asdf">
+            <div class="col-md-6 col-sm-6">
+                <div class="asd">
+                    <img src="../image/skaterboy.jpg" class="tutu1">
+                    <img src="../image/minimalismo.jpg">
+                    <img src="../image/salad.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="asd">
+                    <img src="../image/shutterbug.jpg">
+                    <img src="../image/explore.jpg">
+                    <img src="../image/bicycle.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="main5">
+        <div class="hui">
+            <h4>Contact</h4>
+            <h1>I'm Available for Freelance Work. Feel Free to Contact Me.</h1>
+            <p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua
+                incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+        </div>
+        <div class="hui1">
+            <input class="fgi" placeholder="name">
+            <input class="fgi" placeholder="email">
+            <input class="fgi" placeholder="subject">
+            <textarea class="fgi1" placeholder="message"></textarea>
+            <a href="#" class="btn3">submit</a>
+        </div>
+        <div class="hui1">
+            <div class="col-sm-4  col-xs-12">
+                <h5>Where to find me</h5>
+                <p>1600 Amphitheatre Parkway<br>Mountain View, CA<br>94043 US </p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <h5>Email Me At</h5>
+                <p>someone@howdywebsite.com<br>info@howdywebsite.com </p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <h5>Call Me At</h5>
+                <p>Phone: (+63) 555 1212<br>Mobile: (+63) 555 0100<br>Fax: (+63) 555 0101 </p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        <ul class="ghi">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Behance Dribble</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="ghi1">
+            © Copyright Howdy 2016. More Templates<a href="#"> 模板之家</a> - Collect from<a href="#">网页模板</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".menu").click(function () {
+            $(".nav").show();
+        });
+        $(".wer2").click(function () {
+            $(".nav").hide();
+        })
+    });
+</script>
+</html>

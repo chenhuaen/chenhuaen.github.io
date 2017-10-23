@@ -99,11 +99,9 @@ ul.li{
 .wer1 a:hover{
     color: #5cb85c;
 }
-/*sfgghh*/
 .bnm{
     width: auto;
-    height: 300px;
-    padding: 40px;
+    height: auto;
 }
 .rty{
     width: auto;
@@ -119,39 +117,25 @@ ul.li{
 .rty .col-md-4 h3{
     margin: 60px 0px 20px;
 }
-.tu2{
-    float: left;
-    /*width: 100%;*/
-}
-.rty1{
-    width: 100%;
-    height: 800px;
-}
-.yui{
-    width: 739px;
-    height: 800px;
-    float: left;
-    background-color: #F2F2F1;
-}
 .yui h2{
     font-size: 30px;
     font-weight: 600;
-    margin: 120px 60px 40px;
+    margin: 120px 30px 40px;
 }
 .tyu{
-    width: 600px;
-    margin: 20px 60px;
+    width: auto;
+    margin: 20px 30px;
     font-size: 18px;
     line-height: 30px;
 }
 .tyu1{
-    width: 600px;
-    margin: 0px 60px;
+    width: auto;
+    margin: 0px 30px;
     font-size: 18px;
     line-height: 30px;
 }
 .yui1{
-    margin: 40px 50px;
+    margin: 20px 30px;
 }
 .yui1 .col-md-6{
     width: 50%;
@@ -206,10 +190,13 @@ ul.li{
 .erty{
     margin-top: 130px;
 }
+.erty h3{
+    margin: 0px 10px;
+}
 .jin{
-    width: 500px;
+    width: auto;
     height: 30px;
-    margin: 20px 0px;
+    margin: 20px 10px;
     background-color: #F2F2F1;
 }
 .jin span{
@@ -247,6 +234,19 @@ ul.li{
     color: white;
     line-height: 30px;
 }
+.maint{
+    width: auto;
+    height: auto;
+    border: 1px solid transparent;
+    margin-top: 30px;
+}
+.maint1>.col-md-6{
+    width: 50%;
+    float: left;
+}
+.tu2{
+    width: 100%;
+}
 .rty3{
     width: 100%;
     height: auto;
@@ -282,7 +282,7 @@ ul.li{
 }
 .main1 .col-md-6{
     width: 50%;
-    height: 700px;
+    height: auto;
     margin-top: 80px;
     float: left;
     box-sizing: border-box;
@@ -327,12 +327,13 @@ ul.li{
 }
 .main2{
     width: auto;
-    height: 1100px;
+    height: auto;
     margin: 0px 100px;
+
 }
 .main2 .col-md-6{
     width: 50%;
-    height: 700px;
+    height: auto;
     margin-top: 80px;
     float: left;
     box-sizing: border-box;
@@ -347,17 +348,18 @@ ul.li{
 }
 .main3{
     width: auto;
-    height: 1300px;
-    margin: 0px 100px;
+    height: auto;
+    margin: 0px 0px;
     text-align: center;
+    border: 1px solid red;
 }
 .wert{
-    width: 1000px;
+    width: auto;
     margin: 40px auto;
     line-height: 30px;
 }
-.wert p{
-    margin-top: 30px;
+.sft{
+    margin: 30px 80px 0px;
 }
 .wert1{
     height: 1000px;
@@ -367,10 +369,12 @@ ul.li{
     width: 33.3333%;
     float: left;
     margin: 10px 0px;
+    overflow: hidden;
 }
 .tu4{
-    width: 360px;
+    width: 100%;
     height: 300px;
+    max-width: 360px;
 }
 .main4{
     width: auto;
@@ -385,7 +389,7 @@ ul.li{
 }
 .asdf .col-md-6{
     width: 50%;
-    padding: 15px;
+    /*padding: 15px;*/
     box-sizing: border-box;
     float: left;
     color: #919179;
@@ -414,7 +418,7 @@ ul.li{
     margin: 10px 0px;
 }
 .rtfg{
-    width: 500px;
+    width: 100%;
     height: 40px;
     background-color: #4B5456;
     border: 0;
@@ -455,6 +459,10 @@ ul.li{
     width: 360px;
     margin: 0px auto;
 }
+
+.clear{
+    clear: both;
+}
 @media (min-width: 768px) {
     .wer1>li{
         float: left;
@@ -462,7 +470,6 @@ ul.li{
     .asd{
         margin: 40px 60px;
     }
-
 }
 @media (max-width: 768px) {
     .qwe{
@@ -538,7 +545,7 @@ ul.li{
     }
     .main2{
         height: auto;
-        height: 1600px;
+        height: auto;
         margin: 0px;
     }
     .main2 .col-sm-12{
@@ -567,8 +574,23 @@ ul.li{
     .rtfg{
         width: 100%;
     }
-    .clear{
-        clear: both;
+    .rty .col-sm-12{
+        width:100%;
+    }
+    .maint1>.col-sm-12{
+        width: 100%;
+        float: none;
+    }
+    .asd .col-sm-12{
+        width: 100%;
+        float: none;
+    }
+    .sft{
+        margin: 30px 20px;
     }
 }
-
+@media (max-width: 1200px) {
+    .wer1{
+        display: none;
+    }
+}
